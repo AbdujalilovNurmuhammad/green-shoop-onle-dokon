@@ -6,7 +6,8 @@ import {
   HeartOutlined,
   BoxPlotOutlined,
 } from "@ant-design/icons";
-import { useLocation, useNavigate } from "react-router-dom";
+// BU YERDAN useLocation olib tashlandi, chunki u ishlatilmayotgan edi
+import { useNavigate } from "react-router-dom"; 
 import Cookies from "js-cookie";
 import Adress from "../pages/adress";
 import Details from "../pages/details";
@@ -84,6 +85,7 @@ const ProfileDashboard = () => {
 
       <button
         onClick={logOut}
+        type="button" // Tugma turini aniq ko'rsatish yaxshi amaliyot
         className="flex items-center gap-3 cursor-pointer pl-[5px] w-full h-[40px] mt-[20px] text-base text-red-600"
       >
         <LogoutOutlined />
